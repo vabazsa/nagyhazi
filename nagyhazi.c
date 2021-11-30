@@ -17,15 +17,11 @@ typedef struct _trick
     struct trick *next;
 }trick;
 
-typedef struct best
-{
-    struct best *next;
-    person data;
-}best;
+
 
 int main()
 {
-    printf("Hello");
+    
     char c[21];
     FILE *f1, *f2, *f3 ;
     f1=fopen("persons.txt", "r");
