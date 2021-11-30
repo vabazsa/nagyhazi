@@ -6,8 +6,8 @@ typedef struct _person
 {
     int id;
     int age;
-    char name[21];
-    char nationality[4];
+    char *name;
+    char *nationality;
     struct person *next;
 }person;
 
@@ -23,17 +23,32 @@ typedef struct _trick
 int main()
 {
     
-    char c[50];
+    char row[50];
     FILE *f1, *f2, *f3 ;
+    person *person_list;
     f1=fopen("persons.txt", "r");
 
-    while(fscanf(f1,"%s[^\n]", c)==1)
+    while(fscanf(f1,"%s[^\n]", row)==1)
     {
-        char * data = strtok(c,";");
-        while(data!=NULL)
+        char * data = strtok(row,";");
+        while(data != NULL)
         {
-            printf("%s\n", data);
-            data=strtok(NULL,";");
+            int person_number = 0;
+           
+           printf("%s",data);
+           person_list->id=*data;
+           data=strtok(NULL,";");
+           printf("%s",data);
+           person_list->name=data;
+           data=strtok(NULL,";");
+           printf("%s",data);
+           person_list->age=(int *)data;
+           data=strtok(NULL,";");
+           printf("%s",data);
+           person_list->nationality=data;
+           data=strtok(NULL,";");
+           person_list=person_list->next;
+            
         }
         
     }
