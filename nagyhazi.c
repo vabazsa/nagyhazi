@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 typedef struct _person
 {
@@ -22,12 +23,19 @@ typedef struct _trick
 int main()
 {
     
-    char c[21];
+    char c[50];
     FILE *f1, *f2, *f3 ;
     f1=fopen("persons.txt", "r");
+
     while(fscanf(f1,"%s[^\n]", c)==1)
     {
-        printf("%s\n", c);
+        char * data = strtok(c,";");
+        while(data!=NULL)
+        {
+            printf("%s\n", data);
+            data=strtok(NULL,";");
+        }
+        
     }
 
 return 0;
