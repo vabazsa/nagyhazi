@@ -109,11 +109,18 @@ void fill_person_list(person *head)
     }
     return head;
 }
-int get_points_by_trickname(char *trickname)
+int get_points_by_trickname(char *trickname, trick *head)
 {
-    
+    if()
 }
+/* végigmegyünk a trick_name listán és az abban lévő összes elemre meghívjuk a 
+get_points_by_trickname fv.-t és az onnan visszakapot értéket hozzáadjuk az előzőekhez*/
+int get_points_by_tricklist(char *trickname_list, trick *head) 
+{
+    int sum=0;
 
+    return sum;
+}
 int main()
 {
     person *head = (person *)malloc(sizeof(person));
