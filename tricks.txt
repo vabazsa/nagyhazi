@@ -1,0 +1,6 @@
+backflip;5
+ollie;3
+airback;3
+backflip;4
+nollie;4
+jump;2

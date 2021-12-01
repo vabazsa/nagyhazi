@@ -1,0 +1,3 @@
+1;backflip;ollie
+2;airback;backflip
+3;nollie;jump

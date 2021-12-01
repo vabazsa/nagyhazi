@@ -1,3 +1,6 @@
-1;KissJozsef;22;HUN
-2;NagyPista;19;HUN
-3;JuanCarlos;26;ESP
+1;Kiss Jozsef;22;HUN
+2;Nagy Pista;22;HUN
+3;Juan Carlos;26;ESP
+4;Varga Iren;19;HUN
+5;Santa Feco;30;HUN
+
